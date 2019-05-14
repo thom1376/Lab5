@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         int gridColumnCount = getResources().getInteger(R.integer.grid_column_count);
         int swipeDirs;
-        if(gridColumnCount > 1){
+        if (gridColumnCount > 1) {
             swipeDirs = 0;
         } else {
             swipeDirs = ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT;
