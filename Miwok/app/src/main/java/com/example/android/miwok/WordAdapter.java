@@ -30,13 +30,13 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // Get the {@link Word} object located at this position in the list
         Word currentWord = getItem(position);
 
-        TextView defaultTranslationTextView = listItemView.findViewById(R.id.default_text);
-        // Get the default translation from the Word object and set this text on the name TextView
-        defaultTranslationTextView.setText(currentWord.getDefaultTranslation());
-
-        TextView miwokTranslationTextView = listItemView.findViewById(R.id.miwok_text);
+        TextView miwokTranslationTextView = listItemView.findViewById(R.id.miwok_text_view);
         // Get the miwok translation from the Word object and set this text on the name TextView
         miwokTranslationTextView.setText(currentWord.getMiwokTranslation());
+
+        TextView defaultTranslationTextView = listItemView.findViewById(R.id.default_text_view);
+        // Get the default translation from the Word object and set this text on the name TextView
+        defaultTranslationTextView.setText(currentWord.getDefaultTranslation());
 
         return listItemView;
     }
