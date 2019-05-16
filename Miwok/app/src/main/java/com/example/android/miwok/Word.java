@@ -17,15 +17,19 @@ public class Word {
         this.mImageResourceId = imageResourceId;
     }
 
-    public String getDefaultTranslation() { return mDefaultTranslation; }
+    public String getDefaultTranslation() {
+        return mDefaultTranslation;
+    }
 
     public String getMiwokTranslation() {
         return mMiwokTranslation;
     }
 
-    public int getImageResourceId(){ return mImageResourceId; }
+    public int getImageResourceId() {
+        return mImageResourceId;
+    }
 
-    public boolean hasImage(){
+    public boolean hasImage() {
         return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 }
